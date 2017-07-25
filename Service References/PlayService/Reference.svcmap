@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="325954ef-3019-42c7-b2e3-245c77583bb0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/WcfPlayService/PlayService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="8b2ab130-526d-4530-b82e-7a4a9cb966b2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfPlayService/PlayService/?xsd=xsd0" />
+    <MetadataFile FileName="PlayService.wsdl" MetadataType="Wsdl" ID="03fe8d63-9970-4848-80bf-ca2869ba1be7" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfPlayService/PlayService/?wsdl" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="d9c87db7-1666-4139-98fe-79cd90bdb8e4" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfPlayService/PlayService/?disco" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="0c632954-7b67-4de5-a99a-8c41c09b3161" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WcfPlayService/PlayService/?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

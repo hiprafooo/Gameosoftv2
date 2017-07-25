@@ -1,0 +1,32 @@
+﻿@model Gameosoftv2.ServiceLayer.RegisterUserViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Register User</h2>
+@using (Html.BeginForm("Index", "RegisterUser", FormMethod.Post))
+{
+<table>
+    <tr>
+        <td>
+            UserId
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.UserName)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Password
+        </td>
+        <td>
+            @Html.TextBoxFor(m=>m.Password)
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="submit" name="Create User" value="submit1" />
+        </td>
+    </tr>
+</table>
+}

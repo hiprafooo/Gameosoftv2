@@ -1,0 +1,33 @@
+﻿@model Gameosoftv2.ServiceLayer.LoginUserViewModel
+@{
+    ViewBag.Title = "LoginIndex";
+}
+
+<h2>Login Page </h2>
+@using (Html.BeginForm("LoginIndex", "Login", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>
+                UserId
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.UserName)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.Password)
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" name="Log In User" value="Log In" />
+            </td>
+        </tr>
+    </table>
+    @Html.ActionLink("Register New User", "Index", "RegisterUser")
+}

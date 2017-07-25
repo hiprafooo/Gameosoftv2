@@ -1,0 +1,50 @@
+﻿@model Gameosoftv2.ServiceLayer.AuthenticatedUserViewModel
+@{
+    ViewBag.Title = "Authenticated User";
+}
+<h2>
+    Welcome @HttpContext.Current.User.Identity.Name
+</h2>
+@using (Html.BeginForm("AuthenticatedUserIndex", "AuthenticatedUser", FormMethod.Post))
+{
+<table>
+    <tr>
+        <td>
+            Users
+        </td>
+        <td>
+            @Html.DropDownListFor(m => m.UserId, Model.Users)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Games
+        </td>
+        <td>
+            @Html.DropDownListFor(m => m.GameId, Model.Games)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Hours Played (Ex: 07:35)
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.HoursPlayed) 
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            @{
+                WebGrid objWebGrid = new WebGrid(Model.UserGames);
+            }
+            @objWebGrid.GetHtml()
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="submit" name="EnterData" value="Submit" />
+        </td>
+    </tr>
+</table>
+}
+@Html.ActionLink("Logout", "LogOut")
